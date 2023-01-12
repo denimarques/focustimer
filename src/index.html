@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <meta name="description" content="Temporizados estilo pomodoro">
+    <title>FocusTimer - Pomodoro</title>
+
+    <link rel="stylesheet" href="/public/css/tailwindcss.css">
+</head>
+<body>
+    <main>
+        <div class="h-screen grid place-content-center">
+            <div>
+                <div id="timer" class="">
+                    <span id="minute">00</span>
+                    <span>:</span>
+                    <span id="seconds">00</span>
+                </div>
+                <div id="control" class="rounded-full bg-[#42D3FF] bg-opacity-10 flex justify-center gap-5 p-5">
+                    <button id="play">
+                        <img alt="play" src="/public/images/play-circle.svg">
+                    </button>
+                    <button id="pause" class="hidden">
+                        <img alt="pause" src="/public/images/pause-circle.svg">
+                    </button>
+                    <button id="stop" class="hidden">
+                        <img alt="stop" src="/public/images/stop-circle.svg">
+                    </button>
+                    <button id="set">
+                        <img alt="set" src="/public/images/stopwatch.svg">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="absolute bottom-5 right-5">
+            <button id="sound-on">
+                <img alt="set" src="/public/images/volume-medium.svg">
+            </button>
+            <button id="sound-off" class="hidden">
+                <img alt="set" src="/public/images/volume-mute.svg">
+            </button>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
