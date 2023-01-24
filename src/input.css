@@ -2,18 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
+@layer base {
     body{
-        @apply bg-[#121214] font-Roboto;
-    }
-
-    button{
-        @apply cursor-pointer;
-    }
-}
-
-@layer utilities {
-    #timer{
-        @apply text-white font-bold text-[5.5rem] flex justify-center;
+        @apply font-Roboto;
     }
 }
